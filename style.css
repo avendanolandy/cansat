@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 2px;
+  box-sizing: border-box;  
+}
+
+.inicio{
+  text-align: center;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid #eb9c5d;
+  justify-content: space-evenly;
+  background-color: #eb9c5b;
+  border-radius: 5px;
+}
+
+.gps{
+    padding: 0.5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px;justify-content: space-evenly;
+   
+}
+section{
+    padding: 1px 1px 1px 1px;
+}
+
+.seleccion .titulo{
+    padding: 40px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #eb9c5b;
+    border-radius: 5px;
+}
+main .seleccion input{
+    width: 7rem;
+    height: 1rem;
+   
+}
+
+.content{
+    background: url("imagenes/stsci-01ga76rm0c11w977jrhgj5j26x.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0;
+    text-align: 0;
+}
+.contenido {
+    padding: 1px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main button{
+background-color: white;
+height: 25px;
+width: 10rem;
+border: 1px solid #eb9c5b;
+border-radius: 6px;
+
+}
+
+main button:hover{
+    border: 1px solid #8080804d;
+    box-shadow: 0 0.5px 1px 0 #000001;
+    cursor: pointer;
+}
+
+

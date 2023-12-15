@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript"> 
+    $(document).ready(function(){
+        window.setInterval(
+            function(){
+                $.getJSON("http://192, 168, 1, 200").done(function(datos){
+                    $("#t").text(datos.temperatura);
+                    $("#h").text(datos.humedad);
+                });
+            },1000);
+        });
+    
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cansat</title>
+</head>
+<body>
+    <main class="content">
+    <h1 class="inicio">Raspberry Pi Pico w, Cansat </h1>
+    <section class="seleccion"> 
+        <div class="titulo">
+        <h2 class="gps">DHT11 </h2>
+        <div class="contenido">
+            <p class="dht">Temperatura: <input type="text"> <span id=\"t"></span> &deg;C</p>
+            <p class="dht">Humedad: <input type="text"> <span id=\"h"></span> %</p>
+        </div>
+        </div>
+    <div class="titulo">
+        
+    <h2 class="gps">GPS </h2>
+    <div class="contenido">
+    <p class="date">Fecha: <input type="text"><span id=\"day\" + /  + "month\" + / + "year\"></span></p>
+    <p class="date">Hora: <input type="text"><span id=\"minute\" + : + "second\" ></span></p>
+    <p class="posicion">Latitud: <input type="text"> <span id=\"latitud\"></span></p>
+    <p class="posicion">Longitud: <input type="text"><span id=\"longitud\"></span></p>
+    <p class="posicion">Altitud: <input type="text"><span id=\"gps.f_altitude\">mtrs</span></p>
+    <p class="posicion">Rumbo: <input type="text"><span id=\"gps.f_course\"></span>° </p>
+    <p class="posicion">Velocidad: <input type="text"><span id=\"gps.f_speed:kmph\"> kmph</span> </p>
+    <p class="posicion">Satelites: <input type="text"><span id=\"gps.satellites\"></span> </p>
+</div>
+</div>
+
+<div> <button>Ir a la base de datos</button></div>
+</section>
+</main>
+</body>
+</html>
